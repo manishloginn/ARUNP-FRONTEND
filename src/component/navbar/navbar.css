@@ -1,0 +1,10 @@
+.navbarr {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    justify-content: space-evenly;
+    background-color: #0D47A1;
+    color:  white;
+    font-size: 17px;
+}

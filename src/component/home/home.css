@@ -1,0 +1,140 @@
+.containerrr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 95vw;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* border: 1px solid; */
+}
+
+tr th  {
+    border: 1px solid lightgray;
+    background-color: #0D47A1;
+    color: white;
+    height: 50px;
+    text-align: left;
+    padding: 0px 10px;
+    /* font-size: 16px; */
+}
+
+tr td  {
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 5px 10px;
+    
+}
+
+/* Popup Container */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures popup appears above all elements */
+}
+
+/* Popup Content Box */
+.popup-content {
+    background-color: #fff; /* White background for the popup */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 90%;
+    max-width: 500px; /* Limits width for smaller screens */
+    padding: 20px;
+    animation: popup-fade-in 0.3s ease-in-out;
+}
+
+/* Popup Header */
+.popup-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.popup-content form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.popup-content form input,
+.popup-content form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.popup-content form input:focus,
+.popup-content form select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Actions Buttons */
+.popup-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.popup-actions .bg-green-600 {
+    background-color: #28a745; /* Green button */
+    color: #fff;
+}
+
+.popup-actions .bg-green-600:hover {
+    background-color: #218838;
+}
+
+.popup-actions .bg-red-600 {
+    background-color: #dc3545; /* Red button */
+    color: #fff;
+}
+
+.popup-actions .bg-red-600:hover {
+    background-color: #c82333;
+}
+
+/* Button Press Effect */
+.popup-actions button:active {
+    transform: scale(0.95);
+}
+
+/* Fade-in Animation */
+@keyframes popup-fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
